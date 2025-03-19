@@ -7,9 +7,12 @@
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!-- Включение поддержки аннотаций (если нужно) -->
+    <!-- Включаем поддержку аннотаций -->
     <context:annotation-config/>
 
-    <!-- Сканирование пакетов для поиска компонентов (если нужно) -->
-    <context:component-scan base-package="com.example"/>
+    <!-- Сканируем пакеты для поиска компонентов -->
+    <context:component-scan base-package="org.example"/>
+
+    <!-- Бин для чтения properties-файла -->
+    <context:property-placeholder location="classpath:application.properties"/>
 </beans>
