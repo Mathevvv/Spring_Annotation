@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Data
-@Component
 public class Transmission {
     private int maxTransmission;
     private String transmissionMark;

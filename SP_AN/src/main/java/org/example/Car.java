@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Data
-@Component
 public class Car {
     private String carMark;
     private Engine engine;

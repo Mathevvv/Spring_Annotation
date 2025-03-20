@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Data
-@Component
 public class Engine {
     private String engineMark;
     private int power;
@@ -20,5 +19,8 @@ public class Engine {
         this.engineMark = engineMark;
         this.power = power;
         this.amountOfCylinders = amountOfCylinders;
+    }
+
+    public Engine() {
     }
 }
